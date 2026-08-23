@@ -1,0 +1,14 @@
+arr=[1,3,5]
+target=4
+left=0
+right=len(arr)-1
+while left<=right:
+    mid=(left+right)//2
+    if arr[mid]==target:
+        print(mid)
+        break
+    elif target>arr[mid]:
+        left=mid+1
+    else:
+        right=mid-1
+print(left)

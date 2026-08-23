@@ -1,0 +1,16 @@
+list1=[1,3,5]
+list2=[2,4,6]
+dummy=listnode()
+curr=dummy
+while list1<list2:
+    curr.next=list1
+    list1=list1.next
+else:
+    curr.next=list2
+    list2=list2.next
+    curr=curr.next
+if list1:
+    curr.next=list1
+if list2:
+    curr.next=list2
+print(dummy.next)

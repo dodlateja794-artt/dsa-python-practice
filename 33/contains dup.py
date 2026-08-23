@@ -1,0 +1,9 @@
+nums = [1, 2, 3, 4]
+seen=set()
+for i in nums:
+    if i in seen:
+        print(True)
+        break
+    seen.add(i)
+else:
+    print(False)
